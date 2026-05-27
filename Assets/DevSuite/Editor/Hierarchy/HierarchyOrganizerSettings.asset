@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45264331ac644fc4387d6e18848c7bcb, type: 3}
+  m_Name: HierarchyOrganizerSettings
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::DevSuite.Hierarchy.HierarchyOrganizerSettings
+  enableCustomStyling: 1
+  enableActiveToggle: 1
+  rules:
+  - name: Section Headers
+    isActive: 1
+    matchType: 0
+    searchString: ---
+    textColor: {r: 0.9, g: 0.9, b: 0.9, a: 1}
+    fontSize: 12
+    fontStyle: 1
+    textAlignment: 4
+    drawBackground: 1
+    backgroundColor: {r: 0.15, g: 0.15, b: 0.15, a: 1}
+    isHeader: 1
+  - name: Main Camera
+    isActive: 1
+    matchType: 3
+    searchString: Main Camera
+    textColor: {r: 0.4, g: 0.7, b: 1, a: 1}
+    fontSize: 12
+    fontStyle: 1
+    textAlignment: 3
+    drawBackground: 0
+    backgroundColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    isHeader: 0
