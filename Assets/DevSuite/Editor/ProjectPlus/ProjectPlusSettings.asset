@@ -25,13 +25,13 @@ MonoBehaviour:
   - ruleName: Prefabs Folder
     isActive: 1
     folderName: Prefabs
-    folderColor: {r: 0.25, g: 0.75, b: 0.45, a: 1}
+    folderColor: {r: 0.21759343, g: 0.6301887, b: 0.38328132, a: 1}
     customIcon: 0
     iconGuid: 
   - ruleName: Scenes Folder
     isActive: 1
     folderName: Scenes
-    folderColor: {r: 0.9, g: 0.35, b: 0.35, a: 1}
+    folderColor: {r: 0.8490566, g: 0.2995728, b: 0.2995728, a: 1}
     customIcon: 0
     iconGuid: 
   - ruleName: Materials & Textures Folder

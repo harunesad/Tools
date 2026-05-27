@@ -30,7 +30,7 @@ MonoBehaviour:
     isActive: 1
     matchType: 3
     searchString: Main Camera
-    textColor: {r: 0.4, g: 0.7, b: 1, a: 1}
+    textColor: {r: 0.16977562, g: 0.5559324, b: 0.94716984, a: 1}
     fontSize: 12
     fontStyle: 1
     textAlignment: 3
