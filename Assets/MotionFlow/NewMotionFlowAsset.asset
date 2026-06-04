@@ -1,0 +1,153 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7752b917cbec8eb48824928e5d164e78, type: 3}
+  m_Name: NewMotionFlowAsset
+  m_EditorClassIdentifier: Assembly-CSharp::MotionFlow.Runtime.MotionFlowAsset
+  Sequences:
+  - SequenceName: CubeMove
+    Tracks:
+    - TrackName: cube_move
+      Resolver: 1
+      ResolverQuery: Cube
+      TargetType: 0
+      Steps:
+      - Property: 0
+        IsVector: 1
+        StartVec: {x: 0, y: 0, z: 0}
+        EndVec: {x: 0, y: 3, z: 0}
+        IsColor: 0
+        StartColor: {r: 1, g: 1, b: 1, a: 1}
+        EndColor: {r: 1, g: 1, b: 1, a: 1}
+        IsFloat: 0
+        StartFloat: 0
+        EndFloat: 1
+        Duration: 2
+        Delay: 2
+        Easing: 1
+        CustomCurve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 1
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        IsPathMovement: 0
+        TargetPathName: 
+        ShaderVarName: _Color
+      - Property: 0
+        IsVector: 1
+        StartVec: {x: 0, y: 3, z: 0}
+        EndVec: {x: 0, y: 0, z: 0}
+        IsColor: 0
+        StartColor: {r: 1, g: 1, b: 1, a: 1}
+        EndColor: {r: 1, g: 1, b: 1, a: 1}
+        IsFloat: 0
+        StartFloat: 0
+        EndFloat: 1
+        Duration: 1
+        Delay: 1
+        Easing: 0
+        CustomCurve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 1
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        IsPathMovement: 0
+        TargetPathName: 
+        ShaderVarName: _Color
+      EnableStagger: 0
+      StaggerDelay: 0.05
+  - SequenceName: PathMove
+    Tracks:
+    - TrackName: path_move
+      Resolver: 1
+      ResolverQuery: Cube
+      TargetType: 0
+      Steps:
+      - Property: 0
+        IsVector: 1
+        StartVec: {x: 0, y: 0, z: 0}
+        EndVec: {x: 0, y: 0, z: 1}
+        IsColor: 0
+        StartColor: {r: 1, g: 1, b: 1, a: 1}
+        EndColor: {r: 1, g: 1, b: 1, a: 1}
+        IsFloat: 0
+        StartFloat: 0
+        EndFloat: 1
+        Duration: 2
+        Delay: 1
+        Easing: 2
+        CustomCurve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 1
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        IsPathMovement: 1
+        TargetPathName: Path
+        ShaderVarName: _Color
+      EnableStagger: 0
+      StaggerDelay: 0.05

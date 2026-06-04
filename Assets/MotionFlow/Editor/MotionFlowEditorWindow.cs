@@ -162,9 +162,11 @@ namespace MotionFlow.Editor
                         fontStyle = isSelected ? FontStyle.Bold : FontStyle.Normal
                     };
 
+                    EditorGUILayout.BeginHorizontal();
+
                     if (isSelected) GUI.backgroundColor = new Color(0.12f, 0.58f, 0.95f, 1f);
 
-                    if (GUILayout.Button($"🎬 {seq.SequenceName}", style, GUILayout.Height(28)))
+                    if (GUILayout.Button($"🎬 {seq.SequenceName}", style, GUILayout.Height(28), GUILayout.ExpandWidth(true)))
                     {
                         _selectedSequenceIndex = i;
                         _selectedSequence = seq;
@@ -172,6 +174,30 @@ namespace MotionFlow.Editor
                     }
 
                     GUI.backgroundColor = Color.white;
+
+                    // Delete Button
+                    GUI.backgroundColor = new Color(0.9f, 0.25f, 0.25f, 1f);
+                    if (GUILayout.Button("✕", GUILayout.Width(24), GUILayout.Height(28)))
+                    {
+                        if (EditorUtility.DisplayDialog("Delete Sequence", $"Are you sure you want to delete sequence '{seq.SequenceName}'?", "Delete", "Cancel"))
+                        {
+                            _selectedAsset.Sequences.RemoveAt(i);
+                            EditorUtility.SetDirty(_selectedAsset);
+                            if (_selectedSequenceIndex == i)
+                            {
+                                _selectedSequenceIndex = -1;
+                                _selectedSequence = null;
+                            }
+                            else if (_selectedSequenceIndex > i)
+                            {
+                                _selectedSequenceIndex--;
+                            }
+                            i--;
+                        }
+                    }
+                    GUI.backgroundColor = Color.white;
+
+                    EditorGUILayout.EndHorizontal();
                 }
             }
 
