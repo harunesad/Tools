@@ -271,6 +271,9 @@ namespace DropIt.Editor
             // Brush Mode Selection
             DropItBrushEngine.CurrentMode = (BrushMode)EditorGUILayout.EnumPopup("Brush Mode", DropItBrushEngine.CurrentMode);
 
+            // Spawn Parent Field
+            DropItBrushEngine.SpawnParent = (Transform)EditorGUILayout.ObjectField("Spawn Parent", DropItBrushEngine.SpawnParent, typeof(Transform), true);
+
             if (DropItBrushEngine.IsBrushActive)
             {
                 switch (DropItBrushEngine.CurrentMode)

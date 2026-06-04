@@ -36,6 +36,9 @@ namespace DropIt.Editor
         // Layer Filter
         public static LayerMask LayerFilter { get; set; } = ~0;
 
+        // Parent Object Setting
+        public static Transform SpawnParent { get; set; }
+
         // Palette Settings
         public static List<GameObject> PrefabPalette { get; } = new List<GameObject>();
         public static int SelectedPrefabIndex { get; set; } = 0;
@@ -452,6 +455,11 @@ namespace DropIt.Editor
 
                     GameObject spawned = PrefabUtility.InstantiatePrefab(targetPrefab) as GameObject;
                     if (spawned == null) continue;
+
+                    if (SpawnParent != null)
+                    {
+                        spawned.transform.SetParent(SpawnParent, true);
+                    }
 
                     spawned.transform.position = finalPos;
 
