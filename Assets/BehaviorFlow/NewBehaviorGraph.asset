@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1e76ce0ee6a87d4caf9a2b92387bfaa, type: 3}
+  m_Name: NewBehaviorGraph
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorFlow.Runtime.BehaviorFlowGraph
+  states:
+  - rid: 4167780331016945726
+  startStateGuid: 
+  blackboard:
+    entries: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 4167780331016945726
+      type: {class: FsmState, ns: BehaviorFlow.Runtime, asm: Assembly-CSharp}
+      data:
+        guid: b6428c29-cdbf-4d14-b469-11cc0f29bc98
+        graphPosition: {x: 198.4, y: 26.400002}
+        stateName: Interact
+        transitions: []
+        behaviorTreeRoot:
+          rid: 4167780331016945727
+    - rid: 4167780331016945727
+      type: {class: BtNode, ns: BehaviorFlow.Runtime, asm: Assembly-CSharp}
+      data:
+        guid: 393c0595-5598-4ecb-80e9-6c0ec8de72a0
+        graphPosition: {x: 181.6, y: 52.800003}
+        nodeName: MoveToTarget
+        nodeType: 2
+        actionType: 13
+        conditionType: 0
+        targetBlackboardKey: 
+        floatParameter: 100
+        stringParameter: 
+        keyParameter: Space
+        keyCheckMode: 0
+        axisParameter: Horizontal
+        axisCheckMode: 0
+        vectorParameter: {x: 0, y: 0, z: 0}
+        prefabParameter: {fileID: 0}
+        spawnPointKey: 
+        modifyMode: 0
+        compareOpParameter: Equal
+        componentNameParameter: ScoreSystem
+        methodNameParameter: AddScore
+        methodParamType: Float
+        children: []
